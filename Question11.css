@@ -1,0 +1,114 @@
+body {
+    font-family: sans-serif;
+    max-width: 100%;
+}
+
+.container {
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.maincard {
+    width: 350px;
+    position: relative;
+}
+
+.card {
+    position: relative;
+    width: 320px;
+    height: 480px;
+    background-color: black;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 8px 9px 15px gray;
+}
+
+.maincard:hover {
+    width: 310px;
+    height: 500px;
+}
+
+.price {
+    font-size: 24px;
+    left: 74px;
+    margin-top: 10px;
+    position: fixed;
+}
+
+.title {
+    font-size: 30px;
+    top: 90px;
+    left: 77px;
+    position: fixed;
+    transition-duration: 2s;
+    transition: top 2s color 1s;
+}
+
+.maincard:hover .title {
+    color: white;
+   margin-top:160px;
+}
+
+.img {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    width: 100%;
+    height: 42%;
+    background-color: skyblue;
+    border-radius: 100% 0% 100% 0% / 0% 20% 85% 100%;
+    transition: border-radius 1s;
+}
+
+.maincard:hover .img {
+    border-radius: 0% 0% 0% 100% / 4% 20% 100% 94%;
+}
+
+.product {
+    width: 55%;
+    margin-top: 10px;
+    margin-right: 5px;
+    transform: rotate(36deg);
+    transition: width 1s, transform 1s;
+}
+
+.maincard:hover .product {
+    width: 65%;
+    transform: translateY(50px);
+
+}
+
+.textContainer {
+    margin-top: 35px;
+    margin-left: 16px;
+}
+
+.text {
+    line-height: 1.3;
+    color: white;
+    opacity: 0.7;
+
+
+}
+
+.buy {
+    font-size: 17px;
+    position: absolute;
+    right: 100%;
+    top: 85%;
+    width: 100px;
+    height: 30px;
+    border: 1px solid white;
+    background-color: skyblue;
+    border-radius: 10px;
+    opacity: 0;
+    transition: right 3s, opacity 2s;
+}
+
+.maincard:hover .buy {
+    opacity: 1;
+    right: 34%;
+    cursor: pointer;
+}
